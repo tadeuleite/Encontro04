@@ -48,6 +48,15 @@ function consultarTarefas() {
     statusTarefa.value = listaTarefas;
 }
 
+function limparCompletos() {
+    for (let index = 0; index < listaTarefas.length; index++) {
+        console.log(index+' '+listaTarefas[index].toLocaleLowerCase());
+        if(listaTarefas[index].toLocaleLowerCase() === 'Completo'.toLocaleLowerCase()) {
+            listaTarefas.slice(index-1, 2);
+        }
+    }
+    console.log(listaTarefas);
+}
 
 function localizarIndice(name) {
     for (let index = 0; index < listaTarefas.length; index++) {
@@ -61,8 +70,8 @@ function localizarIndice(name) {
 function status(statusCompleto) {
 
     if (statusCompleto.checked == true) {
-        return "Completo";
+        return 'Completo';
     } else {
-        return "Não completo";
+        return 'Não completo';
     }
 }
