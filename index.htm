@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index/index.css'>
+    <script src='index/index.js'></script>
+</head>
+
+<body>
+    <div id="a">
+        <input id="nomeTarefa" type="text" placeholder="Nome da tarefa aqui">
+        <input id="statusCompleto" type="radio" name="status">Concluido</input>
+        <input id="statusIncompleto" type="radio" name="status">Não Concluido</input> <br>
+
+        <input id="nomeAlteradoTarefa" type="text" placeholder="Novo nome da tarefa aqui">
+        <input id="statusAlterarCompleto" type="radio" name="statusAlterar">Concluido</input>
+        <input id="statusAlterarIncompleto" type="radio" name="statusAlterar">Não Concluido</input> <br>
+
+        <!-- hidden="true" -->
+        <input type="submit" value="Enviar tarefa" onclick="criarTarefa()">
+        <input type="submit" value="Deletar tarefa" onclick="deletarTarefa()">
+        <input id="btnAlterar" type="submit" value="Alterar tarefa" onclick="alterarTarefa()">
+        <input type="submit" value="Consultar tarefa" onclick="consultarTarefas()">
+    </div>
+
+    <div>
+        <input type="text" id="select">
+    </div>
+</body>
+
+</html>
