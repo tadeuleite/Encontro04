@@ -45,7 +45,7 @@ function alterarTarefa() {
 
 function consultarTarefas() {
     var statusTarefa = document.getElementById('select');
-    statusTarefa = listaTarefas;    
+    statusTarefa.value = listaTarefas;
 }
 
 
